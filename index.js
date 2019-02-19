@@ -2,11 +2,13 @@
 
 // function 1
 var line = [];
-var lineNumber = [];
+var n = 1;
 
-function takeANumber(line, customerName){
-  line.push(customerName);
-  return `Welcome, ${customerName}. You are number ${line.length} in line.`;
+function takeANumber(line){
+
+  line.push(n);
+  n += 1;
+  return `You are number ${line.length} in line.`;
 }
 // function 2
 
